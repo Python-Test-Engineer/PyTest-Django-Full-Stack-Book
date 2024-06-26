@@ -1,0 +1,82 @@
+site_name: PyTest Django Full Stack
+site_description: " PyTest Django Fullstack"
+
+repo_url: https://github.com/Python-Test-Engineer/PyTest-Django-Fullstack
+repo_name: Python-Test-Engineer/PyTest-Django-Fullstack
+
+theme:
+  icon:
+    repo: fontawesome/brands/github
+  name: "material" # readthedocs
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      primary: "blue"
+      accent: "grey"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      primary: "purple"
+      accent: "white"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+extra_javascript:
+  - "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-MML-AM_CHTML"
+extra_css:
+  - "assets/css/custom.css"
+extra:
+  manifest: "manifest.json"
+  social:
+    - icon: "fontawesome/brands/github-alt"
+      link: "https://github.com/Python-Test-Engineer/"
+
+plugins:
+  - search
+  - mkdocstrings
+  - blog:
+      blog_dir: blog
+      blog_toc: true
+      archive: true
+      archive_name: All Articles
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+  # - pymdownx.emoji:
+  #     emoji_index: !!python/name:material.extensions.emoji.twemoji
+  #     emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - admonition
+  - attr_list
+  - codehilite
+  - footnotes
+  - toc:
+      permalink: true
+      separator: "_"
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+
+# Page tree
+nav:
+  - "Home": "index.md"
+  - "Learn": learn.md
+  - "PyTest Django Full Stack":
+      - "About": "pytest/index.md"
+      - "Customise": "pytest/pytest_full_stack_customise.md"
+      - "Tests": "pytest/pytest_tests.md"
+      - "Test Management": "pytest/pytest_test_management.md"
+      - "Docker": "pytest/pytest_docker.md"
+      - "Allure": "pytest/pytest_allure.md"
+      - "Cheat Sheet": "pytest/pytest_cheat_sheet.md"
+  - "About Craig":
+      - "Services": "craig/services.md"
+      - "CV": "craig/cv.md"
+      - "Courses": "craig/courses.md"
+      - "Contact": "craig/contact.md"
+
+copyright: |
+  &copy; 2024 <a href="https://github.com/Python-Test-Engineer"  target="_blank" rel="noopener">Craig West - PythonTestEngineer.co.uk</a>
