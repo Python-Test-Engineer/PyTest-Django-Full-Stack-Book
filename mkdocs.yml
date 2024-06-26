@@ -63,15 +63,7 @@ markdown_extensions:
 # Page tree
 nav:
   - "Home": "index.md"
-  - "Learn": learn.md
-  - "PyTest Django Full Stack":
-      - "About": "pytest/index.md"
-      - "Customise": "pytest/pytest_full_stack_customise.md"
-      - "Tests": "pytest/pytest_tests.md"
-      - "Test Management": "pytest/pytest_test_management.md"
-      - "Docker": "pytest/pytest_docker.md"
-      - "Allure": "pytest/pytest_allure.md"
-      - "Cheat Sheet": "pytest/pytest_cheat_sheet.md"
+  - "Intoduction": "pytest/index.md"
   - "About Craig":
       - "Services": "craig/services.md"
       - "CV": "craig/cv.md"
