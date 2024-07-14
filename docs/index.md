@@ -2,7 +2,7 @@
 
 ## Purpose of this book 
 
-The original book 'PyTest Cookbook' had a section for Django Testing. It is worth using this as an additional resource as it contains many useful section on testing with PyTest and Toolbox utilities.
+The original book 'PyTest Cookbook', [https://pytest-cookbook.com/](https://pytest-cookbook.com/), had a section for Django Testing. It is worth using this as an additional resource as it contains many useful section on testing with PyTest and Toolbox utilities.
 
 Based on the scope of testing for Django, it seemed advantageous to create its own book.
 

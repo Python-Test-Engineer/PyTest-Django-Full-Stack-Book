@@ -1,20 +1,13 @@
-- [PythonTestEngineer.co.uk](http://pythontestengineer.co.uk)
 
-- [Github CV](https://github.com/Python-Test-Engineer/)
+## GitHub CV
 
-![Logo](../assets/images/craig.jpg){:style="width:240px;border-radius:50%;border: 5px solid #555;"}
+I use GitHub to host a copy of my CV.
 
-<table>
-<tbody>
-	<tr>
-		<td><img src="./craig.jpg" style="width:240px;border-radius:50%;border: 5px solid #555;"></td>
-		<td>Python Test Engineer - particulalry Django</td>
-	</tr>
+[Github CV](https://github.com/Python-Test-Engineer/)
 
-</tbody>
-</table>
+## Python Backend and Test Automation Engineer
 
-# Python Test Engineer
+![Logo](../images/craig/craig.jpg){:style="width:240px;border-radius:50%;border: 5px solid #555;"}
 
 - Degree in Chemistry, Oxford University.
 - Former A+ PC Technician, Microsoft Certified Systems Engineer and Microsoft Certified SQL Server DBA.
@@ -91,9 +84,9 @@ There are also some specific videos explaining solutions to set ups other develo
 
 - WP Plugin Boilerplate:  I havea video series to explain WP Plugin Boilerplate using a scaffolded out project that demonstrates the use of MySQL, wp_nonce, REST API, forms and how to redirect pages to plugin templates to make the plugin theme independent. https://www.youtube.com/watch?v=lJ9ktD4JOfs&list=PLsszRSbzjyvn-RQr4dEjrgnTne2HcJKee
 
-### Volounteering
+### Volunteering
 
-I volounteer at Codebar.io in Brighton as well as some Community Kitchens.
+I volunteer at Codebar.io in Brighton as well as some Community Kitchens.
 
 ###  Outside interests
 
