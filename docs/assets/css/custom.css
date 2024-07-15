@@ -10,11 +10,14 @@ p, li {
 
 h2 {
     margin: 2rem 0rem 0rem 0rem !important;
-    border-bottom: solid 1px purple;
+    border-bottom: solid 1px rgb(0, 128, 49);
 }
 
 h3 {
     /* margin: 3rem 0rem 1rem 0rem !important; */
     padding: 0rem 0rem 0.5rem 0.5rem !important;
-    border-left: solid 2px rgb(70, 150, 236);
+    border-left: solid 2px rgb(0, 128, 49);
 }
+
+a:hover {
+    color: rgb(140, 240, 178);}

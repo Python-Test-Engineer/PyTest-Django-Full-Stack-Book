@@ -17,7 +17,7 @@ theme:
         icon: material/brightness-7
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
-      primary: "purple"
+      primary: "green"
       accent: "white"
       scheme: slate
       toggle:
@@ -37,11 +37,7 @@ extra:
 plugins:
   - search
   - mkdocstrings
-  - blog:
-      blog_dir: blog
-      blog_toc: true
-      archive: true
-      archive_name: All Articles
+  # - mkdocs-material
 markdown_extensions:
   - pymdownx.highlight
   - pymdownx.superfences
