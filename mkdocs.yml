@@ -61,7 +61,7 @@ nav:
   - "Home": "index.md"
   - "Motivation": "motivation.md"
   - "Intoduction": "introduction.md"
-  - "Set up": "pytest/setup.md"
+  - "Set up": "setup.md"
   - "About Craig":
       - "Services": "craig/services.md"
       - "CV": "craig/cv.md"
@@ -69,4 +69,4 @@ nav:
       - "Contact": "craig/contact.md"
 
 copyright: |
-  &copy; 2024 <a href="https://github.com/Python-Test-Engineer"  target="_blank" rel="noopener">Craig West - PythonTestEngineer.co.uk</a>
+  &copy; 2024 <a href="https://github.com/Python-Test-Engineer"  target="_blank" rel="noopener">Craig West - pytest-cookbook.com</a>
