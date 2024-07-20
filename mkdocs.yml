@@ -59,7 +59,9 @@ markdown_extensions:
 # Page tree
 nav:
   - "Home": "index.md"
-  - "Intoduction": "pytest/index.md"
+  - "Motivation": "motivation.md"
+  - "Intoduction": "introduction.md"
+  - "Set up": "pytest/setup.md"
   - "About Craig":
       - "Services": "craig/services.md"
       - "CV": "craig/cv.md"
