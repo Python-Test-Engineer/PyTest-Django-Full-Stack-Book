@@ -390,6 +390,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#config_setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Config setup
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#remove_testpy" class="md-nav__link">
     <span class="md-ellipsis">
       Remove test.py
@@ -399,9 +408,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#add_tests_folder" class="md-nav__link">
+  <a href="#test_set_up" class="md-nav__link">
     <span class="md-ellipsis">
-      Add tests folder
+      Test set up
     </span>
   </a>
   
@@ -595,6 +604,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#config_setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Config setup
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#remove_testpy" class="md-nav__link">
     <span class="md-ellipsis">
       Remove test.py
@@ -604,9 +622,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#add_tests_folder" class="md-nav__link">
+  <a href="#test_set_up" class="md-nav__link">
     <span class="md-ellipsis">
-      Add tests folder
+      Test set up
     </span>
   </a>
   
@@ -632,11 +650,23 @@
 
 <h1 id="set_up">Set up<a class="headerlink" href="#set_up" title="Permanent link">&para;</a></h1>
 <h2 id="install_pytest">Install Pytest<a class="headerlink" href="#install_pytest" title="Permanent link">&para;</a></h2>
+<p><code>pip install pytest-django</code></p>
 <h2 id="add_pytestini">Add pytest.ini<a class="headerlink" href="#add_pytestini" title="Permanent link">&para;</a></h2>
-<p>We need to add module setting</p>
+<p>Add to pytest.ini</p>
+<p><code>DJANGO_SETTINGS_MODULE = studybud.settings</code> where <code>studybud</code> is name of root app where settings.py resides.</p>
 <h2 id="add_log_folder">Add log folder<a class="headerlink" href="#add_log_folder" title="Permanent link">&para;</a></h2>
+<p><code>pytest.ini</code> is configured to set up logging to this folder. </p>
+<p>Location can be changed.</p>
+<h2 id="config_setup">Config setup<a class="headerlink" href="#config_setup" title="Permanent link">&para;</a></h2>
+<p>This is a convenience utility and not required.</p>
+<p>The <code>config</code> folder and <code>utils/read_config.py</code> can be used to read config settings in the config folder.</p>
 <h2 id="remove_testpy">Remove test.py<a class="headerlink" href="#remove_testpy" title="Permanent link">&para;</a></h2>
-<h2 id="add_tests_folder">Add tests folder<a class="headerlink" href="#add_tests_folder" title="Permanent link">&para;</a></h2>
+<p>To avoid conflicts that I have encountered, remove all test.py files in any apps and use tests folder.</p>
+<h2 id="test_set_up">Test set up<a class="headerlink" href="#test_set_up" title="Permanent link">&para;</a></h2>
+<p>Run <code>python -m pytest -vs</code> and all tests in <code>tests/01_setup</code> folder should pass for setup, logging and config.</p>
+<p>Logging will register some events.</p>
+<p><code>read_config.py</code> should also pass.</p>
+<p><br></p>
 
 
 
