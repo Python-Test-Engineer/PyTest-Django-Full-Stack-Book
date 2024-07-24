@@ -57,4 +57,6 @@ Logging will register some events.
 
 `read_config.py` should also pass.
 
+Middleware and tests has been included...
+
 <br>
