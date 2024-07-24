@@ -6,6 +6,8 @@
 
 `playwright` used for E2E. Please note after installing `playwright` run `run playwright install` to load browsers.
 
+`pytest-playwright`
+
 `django-extensions` is a utility we use.
 
 `rich` and `pyboxen` are used for console output.

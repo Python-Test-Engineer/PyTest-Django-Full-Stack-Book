@@ -14,7 +14,7 @@
         <link rel="prev" href="../introduction/">
       
       
-        <link rel="next" href="../tests_used/">
+        <link rel="next" href="../tests_used/overview/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -363,9 +363,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#install_pytest" class="md-nav__link">
+  <a href="#installs" class="md-nav__link">
     <span class="md-ellipsis">
-      Install Pytest
+      Installs
     </span>
   </a>
   
@@ -466,11 +466,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../tests_used/" class="md-nav__link">
+      <a href="../tests_used/overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Tests used
+    Overview
   </span>
   
 
@@ -808,9 +808,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#install_pytest" class="md-nav__link">
+  <a href="#installs" class="md-nav__link">
     <span class="md-ellipsis">
-      Install Pytest
+      Installs
     </span>
   </a>
   
@@ -880,15 +880,22 @@
 
 
 <h1 id="set_up">Set up<a class="headerlink" href="#set_up" title="Permanent link">&para;</a></h1>
-<h2 id="install_pytest">Install Pytest<a class="headerlink" href="#install_pytest" title="Permanent link">&para;</a></h2>
-<p><code>pip install pytest-django</code></p>
+<h2 id="installs">Installs<a class="headerlink" href="#installs" title="Permanent link">&para;</a></h2>
+<p><code>pytest-django</code> installs <code>pytest</code>.</p>
+<p><code>playwright</code> used for E2E. Please note after installing <code>playwright</code> run <code>run playwright install</code> to load browsers.</p>
+<p><code>pytest-playwright</code></p>
+<p><code>django-extensions</code> is a utility we use.</p>
+<p><code>rich</code> and <code>pyboxen</code> are used for console output.</p>
+<p><code>factory-boy</code> and <code>faker</code> for data generation.</p>
 <h2 id="add_pytestini">Add pytest.ini<a class="headerlink" href="#add_pytestini" title="Permanent link">&para;</a></h2>
 <p>Add to pytest.ini</p>
 <p><code>DJANGO_SETTINGS_MODULE = studybud.settings</code> where <code>studybud</code> is name of root app where settings.py resides.</p>
 <h2 id="add_log_folder">Add log folder<a class="headerlink" href="#add_log_folder" title="Permanent link">&para;</a></h2>
+<p><em>Optional</em></p>
 <p><code>pytest.ini</code> is configured to set up logging to this folder. </p>
 <p>Location can be changed.</p>
 <h2 id="config_setup">Config setup<a class="headerlink" href="#config_setup" title="Permanent link">&para;</a></h2>
+<p><em>Optional</em></p>
 <p>This is a convenience utility and not required.</p>
 <p>The <code>config</code> folder and <code>utils/read_config.py</code> can be used to read config settings in the config folder.</p>
 <h2 id="remove_testpy">Remove test.py<a class="headerlink" href="#remove_testpy" title="Permanent link">&para;</a></h2>
