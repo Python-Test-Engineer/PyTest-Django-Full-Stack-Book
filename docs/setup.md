@@ -12,7 +12,7 @@
 
 `rich` and `pyboxen` are used for console output.
 
-`factory-boy` and `faker` for data generation.
+`factory-boy` (installs `Faker`) for data generation.
 
 ## Add pytest.ini
 
