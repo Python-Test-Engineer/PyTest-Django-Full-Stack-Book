@@ -62,6 +62,16 @@ nav:
   - "Motivation": "motivation.md"
   - "Intoduction": "introduction.md"
   - "Set up": "setup.md"
+  - "Tests":
+      - "Overview": "tests_used/overview.md"
+      - "DB SQL": "tests_used/db_sql.md"
+      - "DB ORM": "tests_used/db_orm.md"
+      - "Models": "tests_used/models.md"
+      - "Views": "tests_used/views.md"
+      - "Forms": "tests_used/forms.md"
+      - "Middleware": "tests_used/middleware.md"
+      - "API": "tests_used/api.md"
+      - "E2E": "tests_used/e2e.md"
   - "About Craig":
       - "Services": "craig/services.md"
       - "CV": "craig/cv.md"

@@ -1,8 +1,16 @@
 # Set up
 
-## Install Pytest
+## Installs
 
-`pip install pytest-django`
+`pytest-django` installs `pytest`.
+
+`playwright` used for E2E. Please note after installing `playwright` run `run playwright install` to load browsers.
+
+`django-extensions` is a utility we use.
+
+`rich` and `pyboxen` are used for console output.
+
+`factory-boy` and `faker` for data generation.
 
 ## Add pytest.ini
 
@@ -10,13 +18,17 @@ Add to pytest.ini
 
 `DJANGO_SETTINGS_MODULE = studybud.settings` where `studybud` is name of root app where settings.py resides.
 
-## Add log folder
+## Add log folder 
+
+*Optional*
 
 `pytest.ini` is configured to set up logging to this folder. 
 
 Location can be changed.
 
 ## Config setup
+
+*Optional*
 
 This is a convenience utility and not required.
 
