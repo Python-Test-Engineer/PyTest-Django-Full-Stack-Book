@@ -8,7 +8,16 @@
 
 `pytest-playwright`
 
-`django-extensions` is a utility we use.
+`django-extensions` is a utility we use. The app needs to be installed in `settings.py`:
+
+```
+
+INSTALLED_APPS = [
+...
+'django-extensions',
+...
+]
+```
 
 `rich` and `pyboxen` are used for console output.
 

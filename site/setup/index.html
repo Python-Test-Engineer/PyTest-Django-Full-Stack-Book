@@ -884,9 +884,13 @@
 <p><code>pytest-django</code> installs <code>pytest</code>.</p>
 <p><code>playwright</code> used for E2E. Please note after installing <code>playwright</code> run <code>run playwright install</code> to load browsers.</p>
 <p><code>pytest-playwright</code></p>
-<p><code>django-extensions</code> is a utility we use.</p>
+<p><code>django-extensions</code> is a utility we use. The app needs to be installed in <code>settings.py</code>:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>...
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>&#39;django-extensions&#39;,
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>...
+</span></code></pre></div>
 <p><code>rich</code> and <code>pyboxen</code> are used for console output.</p>
-<p><code>factory-boy</code> and <code>faker</code> for data generation.</p>
+<p><code>factory-boy</code> (installs <code>Faker</code>) for data generation.</p>
 <h2 id="add_pytestini">Add pytest.ini<a class="headerlink" href="#add_pytestini" title="Permanent link">&para;</a></h2>
 <p>Add to pytest.ini</p>
 <p><code>DJANGO_SETTINGS_MODULE = studybud.settings</code> where <code>studybud</code> is name of root app where settings.py resides.</p>
