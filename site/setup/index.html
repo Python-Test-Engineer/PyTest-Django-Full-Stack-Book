@@ -399,9 +399,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#remove_testpy" class="md-nav__link">
+  <a href="#remove_testspy" class="md-nav__link">
     <span class="md-ellipsis">
-      Remove test.py
+      Remove tests.py
     </span>
   </a>
   
@@ -844,9 +844,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#remove_testpy" class="md-nav__link">
+  <a href="#remove_testspy" class="md-nav__link">
     <span class="md-ellipsis">
-      Remove test.py
+      Remove tests.py
     </span>
   </a>
   
@@ -885,29 +885,35 @@
 <p><code>playwright</code> used for E2E. Please note after installing <code>playwright</code> run <code>run playwright install</code> to load browsers.</p>
 <p><code>pytest-playwright</code></p>
 <p><code>django-extensions</code> is a utility we use. The app needs to be installed in <code>settings.py</code>:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>...
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>&#39;django-extensions&#39;,
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>...
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>INSTALLED_APPS = [
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>...
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>&#39;django_extensions&#39;,
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>...
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>]
 </span></code></pre></div>
 <p><code>rich</code> and <code>pyboxen</code> are used for console output.</p>
 <p><code>factory-boy</code> (installs <code>Faker</code>) for data generation.</p>
+<p>There is both a requirements.txt that lists the libraries needed at a top level, and a requirments_JUL2024.txt that has a <code>pip freeze</code> of all the libraries that got installed.</p>
 <h2 id="add_pytestini">Add pytest.ini<a class="headerlink" href="#add_pytestini" title="Permanent link">&para;</a></h2>
 <p>Add to pytest.ini</p>
 <p><code>DJANGO_SETTINGS_MODULE = studybud.settings</code> where <code>studybud</code> is name of root app where settings.py resides.</p>
 <h2 id="add_log_folder">Add log folder<a class="headerlink" href="#add_log_folder" title="Permanent link">&para;</a></h2>
 <p><em>Optional</em></p>
-<p><code>pytest.ini</code> is configured to set up logging to this folder. </p>
-<p>Location can be changed.</p>
+<p><code>pytest.ini</code> is configured to set up logging to <code>log</code> in the root of the project as well as custom formatting. Change to suit.. </p>
 <h2 id="config_setup">Config setup<a class="headerlink" href="#config_setup" title="Permanent link">&para;</a></h2>
 <p><em>Optional</em></p>
 <p>This is a convenience utility and not required.</p>
 <p>The <code>config</code> folder and <code>utils/read_config.py</code> can be used to read config settings in the config folder.</p>
-<h2 id="remove_testpy">Remove test.py<a class="headerlink" href="#remove_testpy" title="Permanent link">&para;</a></h2>
-<p>To avoid conflicts that I have encountered, remove all test.py files in any apps and use tests folder.</p>
+<p>We use this to load settings when we test APIs and E2E.</p>
+<h2 id="remove_testspy">Remove tests.py<a class="headerlink" href="#remove_testspy" title="Permanent link">&para;</a></h2>
+<p>To avoid conflicts that I have encountered, remove all tests.py files in any apps and use a tests folder to hold test files, either in one central folder in the project or in the apps themselves.</p>
+<p>As the focus of this project is testing rather than the apps, I felt it was of more use to have all the tests with all the sub folders for areas of testing in one location.</p>
+<p><img alt="Tests" src="../images/tests_folder_structure.png" /></p>
 <h2 id="test_set_up">Test set up<a class="headerlink" href="#test_set_up" title="Permanent link">&para;</a></h2>
-<p>Run <code>python -m pytest -vs</code> and all tests in <code>tests/01_setup</code> folder should pass for setup, logging and config.</p>
+<p>Run <code>python -m pytest -vs</code> and all tests in <code>tests/00_setup</code> folder should pass for setup, logging and config.</p>
 <p>Logging will register some events.</p>
 <p><code>read_config.py</code> should also pass.</p>
+<p>Middleware and tests has been included...</p>
 <p><br></p>
 
 

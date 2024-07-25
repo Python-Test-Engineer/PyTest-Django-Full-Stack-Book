@@ -23,6 +23,8 @@ INSTALLED_APPS = [
 
 `factory-boy` (installs `Faker`) for data generation.
 
+There is both a requirements.txt that lists the libraries needed at a top level, and a requirments_JUL2024.txt that has a `pip freeze` of all the libraries that got installed.
+
 ## Add pytest.ini
 
 Add to pytest.ini
@@ -33,9 +35,7 @@ Add to pytest.ini
 
 *Optional*
 
-`pytest.ini` is configured to set up logging to this folder. 
-
-Location can be changed.
+`pytest.ini` is configured to set up logging to `log` in the root of the project as well as custom formatting. Change to suit.. 
 
 ## Config setup
 
@@ -45,13 +45,19 @@ This is a convenience utility and not required.
 
 The `config` folder and `utils/read_config.py` can be used to read config settings in the config folder.
 
-## Remove test.py
+We use this to load settings when we test APIs and E2E.
 
-To avoid conflicts that I have encountered, remove all test.py files in any apps and use tests folder.
+## Remove tests.py
+
+To avoid conflicts that I have encountered, remove all tests.py files in any apps and use a tests folder to hold test files, either in one central folder in the project or in the apps themselves.
+
+As the focus of this project is testing rather than the apps, I felt it was of more use to have all the tests with all the sub folders for areas of testing in one location.
+
+![Tests](./images/tests_folder_structure.png)
 
 ## Test set up
 
-Run `python -m pytest -vs` and all tests in `tests/01_setup` folder should pass for setup, logging and config.
+Run `python -m pytest -vs` and all tests in `tests/00_setup` folder should pass for setup, logging and config.
 
 Logging will register some events.
 
