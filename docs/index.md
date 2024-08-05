@@ -19,9 +19,11 @@ We will go through each part of the Django Testing section in the docs to extrac
 We move into using PyTest and cover:
 
 - Set up of PyTest Django
-- Overview of include apps
+- Overview of included apps
 - Explore the core tests for models, views and forms
 - Dive deeper into SQL Schema tests for the models
+- Test models, views and forms
+- Test miscellaneous - Middleware, Template Tags, Admin Area etc
 - Use Playwright for API testing
 - Use Playwright for End To End testing
 - Use of Factories and Mocks to support our testing

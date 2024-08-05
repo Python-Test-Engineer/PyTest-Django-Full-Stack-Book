@@ -1,6 +1,18 @@
 # Set up
 
-## Installs
+## Clone Test Suite
+
+Clone the repo: https://github.com/Python-Test-Engineer/PyTest-Django-Full-Stack
+
+Create a virtual environment and activate:
+
+- `python -m venv venv`
+- `.\venv\Scripts\activate`
+- `pip install -r requirements.txt`
+- `playwright install` to load in Playwright browsers
+- `python -m pytest -vvvs` will run all the tests in a very verbose mode and one will see the DB etc being set up as part of `pytest-django`.
+
+## How it was built
 
 `pytest-django` installs `pytest`.
 
@@ -57,12 +69,10 @@ As the focus of this project is testing rather than the apps, I felt it was of m
 
 ## Test set up
 
-Run `python -m pytest -vs` and all tests in `tests/00_setup` folder should pass for setup, logging and config.
+Run `python -m pytest -vs tests/00_setup` and all tests in `tests/00_setup` folder should pass for setup, logging and config. This will ensure the framework is wired up correctly.
 
 Logging will register some events.
 
 `read_config.py` should also pass.
-
-Middleware and tests has been included...
 
 <br>

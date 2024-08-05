@@ -69,7 +69,7 @@ nav:
       - "Models": "tests_used/models.md"
       - "Views": "tests_used/views.md"
       - "Forms": "tests_used/forms.md"
-      - "Middleware": "tests_used/middleware.md"
+      - "Miscellaneous": "tests_used/misc.md"
       - "API": "tests_used/api.md"
       - "E2E": "tests_used/e2e.md"
   - "About Craig":

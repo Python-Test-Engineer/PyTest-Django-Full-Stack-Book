@@ -363,9 +363,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#installs" class="md-nav__link">
+  <a href="#clone_test_suite" class="md-nav__link">
     <span class="md-ellipsis">
-      Installs
+      Clone Test Suite
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how_it_was_built" class="md-nav__link">
+    <span class="md-ellipsis">
+      How it was built
     </span>
   </a>
   
@@ -592,11 +601,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../tests_used/middleware/" class="md-nav__link">
+      <a href="../tests_used/misc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Middleware
+    Miscellaneous
   </span>
   
 
@@ -808,9 +817,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#installs" class="md-nav__link">
+  <a href="#clone_test_suite" class="md-nav__link">
     <span class="md-ellipsis">
-      Installs
+      Clone Test Suite
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how_it_was_built" class="md-nav__link">
+    <span class="md-ellipsis">
+      How it was built
     </span>
   </a>
   
@@ -880,7 +898,17 @@
 
 
 <h1 id="set_up">Set up<a class="headerlink" href="#set_up" title="Permanent link">&para;</a></h1>
-<h2 id="installs">Installs<a class="headerlink" href="#installs" title="Permanent link">&para;</a></h2>
+<h2 id="clone_test_suite">Clone Test Suite<a class="headerlink" href="#clone_test_suite" title="Permanent link">&para;</a></h2>
+<p>Clone the repo: https://github.com/Python-Test-Engineer/PyTest-Django-Full-Stack</p>
+<p>Create a virtual environment and activate:</p>
+<ul>
+<li><code>python -m venv venv</code></li>
+<li><code>.\venv\Scripts\activate</code></li>
+<li><code>pip install -r requirements.txt</code></li>
+<li><code>playwright install</code> to load in Playwright browsers</li>
+<li><code>python -m pytest -vvvs</code> will run all the tests in a very verbose mode and one will see the DB etc being set up as part of <code>pytest-django</code>.</li>
+</ul>
+<h2 id="how_it_was_built">How it was built<a class="headerlink" href="#how_it_was_built" title="Permanent link">&para;</a></h2>
 <p><code>pytest-django</code> installs <code>pytest</code>.</p>
 <p><code>playwright</code> used for E2E. Please note after installing <code>playwright</code> run <code>run playwright install</code> to load browsers.</p>
 <p><code>pytest-playwright</code></p>
@@ -910,10 +938,9 @@
 <p>As the focus of this project is testing rather than the apps, I felt it was of more use to have all the tests with all the sub folders for areas of testing in one location.</p>
 <p><img alt="Tests" src="../images/tests_folder_structure.png" /></p>
 <h2 id="test_set_up">Test set up<a class="headerlink" href="#test_set_up" title="Permanent link">&para;</a></h2>
-<p>Run <code>python -m pytest -vs</code> and all tests in <code>tests/00_setup</code> folder should pass for setup, logging and config.</p>
+<p>Run <code>python -m pytest -vs tests/00_setup</code> and all tests in <code>tests/00_setup</code> folder should pass for setup, logging and config. This will ensure the framework is wired up correctly.</p>
 <p>Logging will register some events.</p>
 <p><code>read_config.py</code> should also pass.</p>
-<p>Middleware and tests has been included...</p>
 <p><br></p>
 
 
