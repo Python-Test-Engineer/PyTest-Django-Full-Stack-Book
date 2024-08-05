@@ -2,7 +2,7 @@
 
 ## Clone Test Suite
 
-Clone the repo: https://github.com/Python-Test-Engineer/PyTest-Django-Full-Stack
+Clone the repo: [https://github.com/Python-Test-Engineer/PyTest-Django-Full-Stack](https://github.com/Python-Test-Engineer/PyTest-Django-Full-Stack)
 
 Create a virtual environment and activate:
 
