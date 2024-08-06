@@ -20,7 +20,7 @@ Create a virtual environment and activate:
 
 `pytest-playwright`
 
-`django-extensions` is a utility we use. The app needs to be installed in `settings.py`:
+`django-extensions` is a utility we use. It is optional. The app needs to be installed in `settings.py`:
 
 ```
 

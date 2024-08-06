@@ -26,7 +26,7 @@ This has FK and M2M tables for `Category`, `Product`, `Order`, `ProductCategory`
 - Models
 - Views
 - Forms
-- Middleware
+- Misc ltesting of Middleware, Admin, Template Tags etc
 - API
 - E2E
 

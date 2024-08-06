@@ -62,6 +62,8 @@ nav:
   - "Motivation": "motivation.md"
   - "Intoduction": "introduction.md"
   - "Set up": "setup.md"
+  - "Django Docs": "django_docs.md"
+  - "PyTest-Django": "pytest_django.md"
   - "Tests":
       - "Overview": "tests_used/overview.md"
       - "DB SQL": "tests_used/db_sql.md"
